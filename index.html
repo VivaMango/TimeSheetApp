@@ -22,17 +22,40 @@
     <!-- Bootstrap Jumbotron acting as our game header. -->
     <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4"><img src="#" alt="logo">Welcome to the TimeSheetApp!</h1> <!-- Link is WORKING -->
-                <form class="inputForm">
-                    <input id="nameInput" type="text" name="nameInput"></input>
-                    <input id="titleInput" type="text" name="titleInput"></input>
-                    <input id="dateInput" type="text" name="dateInput"></input>
-                    <input id="payInput" type="text" name="payInput"></input>
-                    <input id="giphySubmit" type="submit" value="Save to Database"></input>
-                </form>
+                <h1 class="display-4">Welcome to the TimeSheetApp!</h1> <!-- Link is WORKING -->
             </div>
         </div>
     <!-- Container for holding our GIFs during API testing -->
+    <div class=container>
+      <h2>Add an Employee</h2>
+      <br>
+
+    <form class="inputForm">
+
+      <div class="form-group">
+      <label for="nameInput">Name</label>
+      <input id="nameInput" type="text" name="nameInput"></input>
+      </div>
+
+      <div class="form-group">
+      <label for="titleInput">Role</label>
+      <input id="titleInput" type="text" name="titleInput"></input>
+      </div>
+
+      <div class="form-group">
+      <label for="dateInput">Date of Employment</label>
+      <input id="dateInput" type="text" name="dateInput"></input>
+      </div>
+
+      <div class="form-group">
+      <label for="payInput">Payrate</label>
+      <input id="payInput" type="text" name="payInput"></input>
+      </div>
+
+      <input id="databaseSubmit" type="submit" value="Save to Database"></input>
+    </form>
+    <br>
+  </div>
         <div class=container>
             <div class=row>
                 <!-- Container to hold our GIF generating buttons -->
