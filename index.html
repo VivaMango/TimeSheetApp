@@ -16,6 +16,7 @@
     <!-- Our Stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
+
 </head>
 <body>
 
@@ -25,10 +26,10 @@
                 <h1 class="display-4"><img src="#" alt="logo">Welcome to the TimeSheetApp!</h1> <!-- Link is WORKING -->
                 <form class="inputForm">
                     <input id="nameInput" type="text" name="nameInput"></input>
-                    <input id="titleInput" type="text" name="titleInput"></input>
-                    <input id="dateInput" type="text" name="dateInput"></input>
-                    <input id="payInput" type="text" name="payInput"></input>
-                    <input id="giphySubmit" type="submit" value="Save to Database"></input>
+                    <input id="roleInput" type="text" name="titleInput"></input>
+                    <input id="startInput" type="text" name="dateInput"></input>
+                    <input id="rateInput" type="text" name="payInput"></input>
+                    <input id="inputSubmit" type="submit" value="Save to Database"></input>
                 </form>
             </div>
         </div>
@@ -36,7 +37,7 @@
         <div class=container>
             <div class=row>
                 <!-- Container to hold our GIF generating buttons -->
-                <div id=buttonDisplay class=col-lg-12></div>
+                <div id=infoDisplay class=col-lg-12></div>
                 <table class="table">
                         <thead class="thead-dark">
                           <tr>
@@ -48,6 +49,9 @@
                             <th scope="col">Total Payroll</th>
                           </tr>
                         </thead>
+                        <tbody id=tableBody>
+
+                        </tbody>
                         <!-- KEEP ABOVE // DELETE BELOW -->
 
                         <!-- <tbody>
@@ -84,5 +88,11 @@
     
     
 </body>
+
+<!-- Firebase Library -->
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+
+<!-- Our JavaScript File -->
 <script src="assets/javascript/app.js"></script>
+
 </html>
